@@ -1,0 +1,24 @@
+[project]
+name = "lokilog"
+version = "1.0.0"
+description = "Logging module for loki"
+authors = [
+    {name = "love_cube",email = "ahapka1@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "cramjam (>=2.11.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "lokilog" }
+]
